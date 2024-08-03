@@ -15,7 +15,7 @@ module.exports = {
     longDescription: {
       en: "gunakan perintah ini untuk merampok uang dari pengguna lain."
     },
-    category: "economy",
+    category: "games",
     guide: {
       en: "{pn} (uid/mention): Merampok uang dari pengguna yang disebutkan."
     }
