@@ -14,7 +14,7 @@ module.exports = {
     longDescription: {
       en: "Menambang untuk mendapatkan emas, berlian, emerald, atau item imut lainnya."
     },
-    category: "GAME",
+    category: "games",
     guide: {
       en: "{pn} mining: Menambang untuk mendapatkan item imut."
     }
