@@ -6,7 +6,7 @@ module.exports = {
         countDown: 5,
         role: 0,
         description: "Berikan uang kepada pengguna lain",
-        category: "ekonomi",
+        category: "fitur",
         guide: "{pn} [fakeuid] [jumlah] - Berikan uang kepada pengguna lain dengan fakeuid yang ditentukan"
     },
 
