@@ -21,7 +21,7 @@ module.exports = {
     const { senderID, threadID } = event;
     
     if (args.length !== 4) {
-      return api.sendMessage("⚠️ Masukkan 4 angka untuk bermain lotto. Contoh: 'lotto 1 5 7 8' ⚠️", threadID);
+      return api.sendMessage("⚠ Masukkan 4 angka untuk bermain lotto. Contoh: 'lotto 1 5 7 8' ⚠", threadID);
     }
 
     const userNumbers = args.map(Number);
@@ -38,7 +38,8 @@ module.exports = {
     }
 
     const matchingNumbers = userNumbers.filter(num => randomNumbers.includes(num));
-    const reward = matchingNumbers.length * 1000;
+    const uniqueMatchingNumbers = [...new Set(matchingNumbers)]; // Menghitung angka yang cocok secara unik
+    const reward = uniqueMatchingNumbers.length * 1000;
     const ticketPrice = 890;
 
     const currentUserData = await usersData.get(senderID);
